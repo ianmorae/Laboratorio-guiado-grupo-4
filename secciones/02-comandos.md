@@ -26,3 +26,38 @@ Este comando permite establecer el correo electrónico que Git asociará con los
 git config --list
 
 Este comando permite revisar las configuraciones que tiene Git actualmente.
+
+## 2.3 El ciclo de trabajo
+
+**-git status:** El comando git status se utiliza para revisar el estado actual del proyecto. Permite saber qué archivos fueron modificados, cuáles están pendientes de agregar y cuáles ya están preparados para realizar un commit.
+
+**Ejemplo:**
+
+Si modificamos el archivo index.html, podemos ejecutar: **git status**.
+
+Git nos indicará que el archivo index.html fue modificado y que todavía no ha sido agregado al área de preparación.
+
+**-git add:** El comando git add se utiliza para agregar los cambios al área de preparación (staging area). Esto indica a Git qué cambios queremos incluir en el próximo commit.
+
+**Ejemplo:**
+
+Si queremos agregar todos los archivos modificados: **git add .**
+
+En este caso, el punto . indica que se agregarán todos los cambios del proyecto. También podemos agregar solamente un archivo: git add index.html. 
+Esto prepara únicamente el archivo index.html para el próximo commit.
+
+**-git commit:** El comando git commit se utiliza para guardar los cambios que fueron agregados al área de preparación. Cada commit representa un registro de los cambios realizados en el proyecto y lleva un mensaje que permite identificarlo.
+
+**Ejemplo:**
+
+Después de utilizar git add, podemos guardar los cambios con: **git commit -m "Actualiza la página principal"**.
+
+En este ejemplo, "Actualiza la página principal" es el mensaje que describe el cambio realizado.
+
+**-git push:** El comando git push se utiliza para enviar los commits del repositorio local al repositorio remoto, como GitHub.
+
+**Ejemplo:**
+
+Después de realizar el commit, podemos enviar los cambios a GitHub mediante: **git push**
+
+De esta manera, el commit que estaba guardado en nuestra computadora se envía al repositorio remoto.
