@@ -10,7 +10,6 @@ Gracias a eso se puede volver a cualquier versión anterior, comparar versiones 
 No sirve solo para código: también se puede usar con documentos de texto, como esta guía.
 El sistema más usado hoy es **Git**.
 
-
 ## 1.2 El método de las copias con fecha
 
 Antes de usar control de versiones, es común guardar copias de la carpeta con nombres como `proyecto-final`, `proyecto-final-v2` o `proyecto-2026-09-30`.
@@ -21,7 +20,6 @@ Parece sencillo, pero tiene varios problemas:
 - No queda registrado qué cambió entre una copia y otra, ni por qué.
 - Cuando varias personas trabajan a la vez, es muy difícil juntar los cambios sin perder algo.
 
-
 ## 1.3 Qué resuelve un sistema de control de versiones
 
 - **Historial completo:** cada cambio queda guardado con su autor, su fecha y un mensaje.
@@ -29,3 +27,11 @@ Parece sencillo, pero tiene varios problemas:
 - **Trabajo en equipo:** varias personas trabajan en el mismo proyecto y luego unen sus cambios.
 - **Respaldo:** al subirlo a un repositorio remoto como GitHub, el trabajo no depende de una sola computadora.
 - **Orden:** hay una sola carpeta del proyecto en lugar de muchas copias.
+
+## 1.4 Centralizado y distribuido
+
+En un sistema **centralizado**, el historial completo vive en un solo servidor. Cada persona necesita conexión a ese servidor para guardar cambios o ver el historial, y si el servidor falla, nadie puede trabajar. Un ejemplo es Subversion (SVN).
+
+En un sistema **distribuido**, cada persona tiene en su computadora una copia completa del repositorio con todo el historial. Se puede trabajar y hacer commits sin conexión y después sincronizar con los demás.
+
+**Git es un sistema distribuido.** Por eso `git commit` guarda en el repositorio local, y `git push` y `git pull` sincronizan con el repositorio remoto en GitHub.
