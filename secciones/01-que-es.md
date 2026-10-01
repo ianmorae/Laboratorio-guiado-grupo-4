@@ -20,3 +20,12 @@ Parece sencillo, pero tiene varios problemas:
 - Es fácil confundirse y no saber cuál es la versión correcta o la más reciente.
 - No queda registrado qué cambió entre una copia y otra, ni por qué.
 - Cuando varias personas trabajan a la vez, es muy difícil juntar los cambios sin perder algo.
+
+
+## 1.3 Qué resuelve un sistema de control de versiones
+
+- **Historial completo:** cada cambio queda guardado con su autor, su fecha y un mensaje.
+- **Volver atrás:** si algo se rompe, se puede regresar a una versión que sí funcionaba.
+- **Trabajo en equipo:** varias personas trabajan en el mismo proyecto y luego unen sus cambios.
+- **Respaldo:** al subirlo a un repositorio remoto como GitHub, el trabajo no depende de una sola computadora.
+- **Orden:** hay una sola carpeta del proyecto en lugar de muchas copias.
