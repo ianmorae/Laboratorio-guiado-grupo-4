@@ -61,3 +61,9 @@ En este ejemplo, "Actualiza la página principal" es el mensaje que describe el 
 Después de realizar el commit, podemos enviar los cambios a GitHub mediante: **git push**
 
 De esta manera, el commit que estaba guardado en nuestra computadora se envía al repositorio remoto.
+
+## 2.4 Consultar el historial
+
+**-git log:** El comando git log sirve para consultar el historial de cambios de un proyecto. Permite ver los commits que se han realizado y conocer información como el autor, la fecha, el mensaje y el identificador de cada commit.
+
+**-Identificador de un commit:** El identificador de un commit es un código único que Git asigna a cada cambio guardado. Sirve para diferenciar un commit de los demás y localizar un cambio específico dentro del historial del proyecto.
