@@ -13,3 +13,8 @@ El repositorio local es la copia del proyecto que vive en la computadora de cada
 ## 3.3 Conflictos
 
 Un conflicto ocurre cuando dos personas modifican la misma línea, o líneas muy cercanas, de un archivo y Git no puede decidir automáticamente cuál versión conservar. Git marca el conflicto directamente en el archivo con las etiquetas <<<<<<< HEAD, ======= y >>>>>>>, separando la versión local de la que llegó del remoto. Resolver un conflicto es una decisión humana, no de Git: hay que abrir el archivo, revisar ambas versiones y decidir si se queda una, la otra, o se combinan las dos, y luego borrar las marcas. Un error común es resolver el conflicto borrando el trabajo de la otra persona para salir rápido del problema, pero eso no es resolver, es perder información. Después de arreglar el archivo se hace git add, git commit y git push como con cualquier otro cambio, para avisarle a Git que el conflicto ya quedó resuelto.
+
+
+## 3.4 Buenas prácticas de commits
+
+Cada commit debe representar un cambio pequeño y completo, no una mezcla de varias cosas distintas a la vez. El mensaje se escribe en presente y describiendo qué hace el cambio, por ejemplo "agrega validación del formulario" en lugar de "cambios" o "arreglos". Conviene hacer commits frecuentes en lugar de guardar todo el trabajo del día en uno solo, porque eso facilita encontrar en qué momento se rompió algo. Antes de empezar a trabajar es buena práctica hacer git pull, para no construir sobre una versión vieja del proyecto. Revisar git status antes de cada commit ayuda a confirmar qué se va a subir y evita incluir archivos que no correspondían.
